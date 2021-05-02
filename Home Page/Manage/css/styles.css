@@ -121,6 +121,12 @@ html  {
     font-weight: 700;
     color: #f64e60;
 }
+.small-font{
+    font-size: 14px;
+}
+.normal--font{
+    font-size: 20px;
+}
 /* KITCHEN */
 .kitchen-order-list-head{
     margin: 0;
@@ -213,6 +219,14 @@ html  {
     color: white;
     background-color: #f64e60;
 }
+.list-group-item a{
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+.list-group-item a:focus{
+    color: #f64e60;
+}
 
 /* TABLE */
 .table--text, .modal-table-text{
@@ -239,6 +253,11 @@ html  {
     height: 69vh;
     margin: 0 auto;
     overflow: scroll;
+}
+.reports-scrollbar{
+    height: 80vh;
+    margin: 0 auto;
+    overflow: overlay;
 }
 .order-menu-scrollbar:hover{
     overflow-y: scroll;
@@ -289,4 +308,11 @@ html  {
     position: sticky;
     bottom: 1px;
     background-color: #fff;
+}
+/* COLORS */
+.dark--black{
+    color: #000 !important;
+}
+.bg-dark-black{
+    background-color: #000 !important;
 }

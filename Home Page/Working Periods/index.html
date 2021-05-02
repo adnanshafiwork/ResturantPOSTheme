@@ -54,22 +54,30 @@
 </div>
 
 <!--WORK PERIODS-->
-<div class="main min-vh-100">
-  <div class="container container-sm-fluid bg-light mb-5 px-4 py-3 shadow rounded">
+<div class="main">
+  <div class="container container-sm-fluid bg-white px-4 py-3 shadow rounded">
     <div class="container container-sm-fluid">
       <div class="row mb-3">
         <h2 class="top-heading m-0">Work Periods</h2>
       </div>
-      <div class="row justify-content-between align-items-center">
-        <div class="col-md-4 mb-2 m-sm-0 p-0">
+      <div class="row align-items-center">
+        <div class="col-sm-5 mb-2 m-sm-0 p-0">
           <div class="input-group">
             <div class="input-group-prepend">
               <button class="btn search-icon" type="button"><span><i class="fas fa-search"></i></span></button>
             </div>
-            <input type="text" class="form-control search-area" placeholder="Search by user, data" aria-label="" aria-describedby="basic-addon1">
+            <input type="text" class="form-control search-area" placeholder="Search by branch, user, data" aria-label="" aria-describedby="basic-addon1">
           </div>
         </div>
-        <div class="col-md-4 mb-2 m-sm-0 p-0">
+        <div class="col-sm-4 mb-2 m-sm-0 p-0 px-sm-2">
+          <div class="form-group m-0">
+            <select id="inputState" class="form-control">
+              <option selected>Please select a branch</option>
+              <option>1st Branch</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-3 mb-2 m-sm-0 p-0">
           <button class="btn text-uppercase w-100 btn-primary" type="button">start work period</button>
         </div>
       </div>
@@ -79,13 +87,16 @@
 
 
 <!-- TABLE -->
-    <div class="container container-sm-fluid mt-3 p-0 rounded bg-light">
+    <div class="container container-sm-fluid bg-light mt-3 p-0 rounded">
       <div class="table-responsive vertical-scroll">
         <table class="table table-bordered table--text">
 	  			<thead>
 	  				<tr>
 	  					<th scope="col">
 	  						S/L
+	  					</th>
+	  					<th scope="col">
+	  						Branch
 	  					</th>
 	  					<th scope="col">
 	  						Started by
@@ -110,6 +121,7 @@
 	  			<tbody>
 	  				<tr>
 	  					<td>1</td>
+              <td class="text-primary">Gulshan Branch</td>
               <td>John Doe</td>
               <td>Saturday, 19 Dec,2020</td>
               <td class="text-success">03:16 PM</td>
@@ -119,6 +131,7 @@
 	  				</tr>
 	  				<tr>
 	  					<td>1</td>
+              <td class="text-primary">Gulshan Branch</td>
               <td>John Doe</td>
               <td>Saturday, 19 Dec,2020</td>
               <td class="text-success">03:16 PM</td>
@@ -128,6 +141,7 @@
 	  				</tr>
 	  				<tr>
 	  					<td>1</td>
+              <td class="text-primary">Gulshan Branch</td>
               <td>Declan</td>
               <td>Saturday, 19 Dec,2020</td>
               <td class="text-success">03:16 PM</td>
@@ -137,6 +151,7 @@
 	  				</tr>
 	  				<tr>
 	  					<td>1</td>
+              <td class="text-primary">Gulshan Branch</td>
               <td>Declan</td>
               <td>Saturday, 19 Dec,2020</td>
               <td class="text-success">03:16 PM</td>
@@ -146,6 +161,7 @@
 	  				</tr>
 	  				<tr>
 	  					<td>1</td>
+              <td class="text-primary">Gulshan Branch</td>
               <td>Declan</td>
               <td>Saturday, 19 Dec,2020</td>
               <td class="text-success">03:16 PM</td>
@@ -172,7 +188,7 @@
   </div>
 </div>   
 <!--FOOTER-->
-<footer class="container-fluid bg-white fixed-bottom py-3">
+<footer class="container-fluid bg-white fixed-bottom py-4">
   <div class="row align-items-center justify-content-center">
       <div class="col-sm-6 col-md-4">
           <h5 class="m-0 font-weight-bold text-danger">

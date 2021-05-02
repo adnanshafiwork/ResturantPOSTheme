@@ -54,20 +54,28 @@
 </div>
 
 <!--ORDER HISTORY-->
-<div class="main min-vh-100 py-3">
-  <div class="container-sm-fluid bg-white mb-5 mx-2 p-3 shadow rounded">
+<div class="main">
+  <div class="container-sm-fluid bg-white mx-2 p-3 shadow rounded">
     <div class="container-sm-fluid px-3">
       <div class="row mb-3">
         <h2 class="top-heading m-0">Order History</h2>
       </div>
       <form action="" method="get">
       <div class="row align-items-center justify-content-between">
-        <div class="col-sm-6 mb-2 m-sm-0 p-0 pr-sm-5">
+        <div class="col-sm-4 mb-2 m-sm-0 p-0 pr-sm-5">
           <div class="input-group">
             <div class="input-group-prepend">
               <button class="btn search-icon" type="button"><span><i class="fas fa-search"></i></span></button>
             </div>
             <input type="text" class="form-control search-area date-placeholder" placeholder="Search by token, customer, branch.." aria-label="" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-sm-2 mb-2 m-sm-0 p-0">
+          <div class="form-group m-0">
+            <select id="inputState" class="form-control">
+              <option selected>Select branch..</option>
+              <option>1st Branch</option>
+            </select>
           </div>
         </div>
         <div class="p-0 mb-2 m-sm-0 col-sm-2">
@@ -77,7 +85,7 @@
           <input type="text" class="form-control date-placeholder" placeholder="To Date : 01/02/2021">
         </div>
         <div class="p-0 mb-2 m-sm-0 col-sm-1 mb-2 m-sm-0 p-0 text-center">
-          <button class="btn filter-btn btn-block px-3" type="button">Filter</button>
+          <button class="btn filter-btn px-3" type="button">Filter</button>
         </div>
       </div>
       </form>
@@ -111,6 +119,9 @@
 	  						Total Bill
 	  					</th>
 	  					<th scope="col">
+	  						Branch
+	  					</th>
+	  					<th scope="col">
 	  						Status
 	  					</th>
 	  					<th scope="col">
@@ -129,6 +140,7 @@
               <td>Dec 29, 2020</td>
               <td>-</td>
               <td>14.75$</td>
+              <td>RY Khan</td>
               <td>
                 <button type="button" class="btn process-btn rounded-0" data-toggle="modal" data-target="#processing">Processing</button>
               </td>
@@ -153,6 +165,7 @@
               <td>Dec 29, 2020</td>
               <td>-</td>
               <td>14.75$</td>
+              <td>RY Khan</td>
               <td>
                 <button type="button" class="btn process-btn rounded-0" data-toggle="modal" data-target="#processing">Processing</button>
               </td>
@@ -190,7 +203,7 @@
   </div>
 </div>   
 <!--FOOTER-->
-<footer class="container-fluid bg-white fixed-bottom py-3">
+<footer class="container-fluid bg-white fixed-bottom py-4">
   <div class="row align-items-center justify-content-center">
       <div class="col-sm-6 col-md-4">
           <h5 class="m-0 font-weight-bold text-danger">
