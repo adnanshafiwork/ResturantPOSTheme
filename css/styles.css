@@ -1,14 +1,24 @@
 /*Global Properties*/
-.font-normal-bold{
-    font-size: 14px;
-    font-weight: 400;
-}
-.font-normal{
-    font-size: 14px;
-}
+/*Fonts*/
 *{
     font-family: 'Poppins', sans-serif;
 }
+.font-normal-bold{
+    font-size: 14px;
+    font-weight: 500;
+}
+.font--normal{
+    font-size: 14px;
+}
+.font--big{
+    font-size: 26px;
+}
+.text--grey{
+    color: #374a5e;
+}
+
+/*Fonts End*/
+
 /*Login Page*/
 
 #login-page{
@@ -17,20 +27,11 @@
 .logo{
     width: 110px;
 }
-.intro-bg{
-    width: 550px;
-}
 @media screen and (max-width: 990px) {  
     .intro-bg {
       display: none;
     }
   }
-.signin{
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
-    color: #374a5e;
-    font-weight: 700;
-}
 .pass{
     color: inherit;
 }

@@ -11,15 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body id="login-page">
-    <div class="container main-body">
-        <div class="row mt-xl-5">
+    <div class="container-md-fluid px-5 main-body">
+        <div class="row mt-5 px-1">
             <div class="col-sm-12">
-                <span><a href="#"><h1 class="m-0 font-weight-bold text-danger">LOGO</h1></a></span>
+                <span><h1 class="m-0 font-weight-bold text-md-left text-center"><a href="#">LOGO</a></h1></span>
             </div>
         </div>
         <div class="row justify-content-between">
-            <div class="col-sm-12 col-lg-4 col-xl-4 mt-5 p-4">
-                <span><h3 class="signin">Sign In</h3></span>
+            <div class="col-md-4 mt-5 p-4">
+                <span><h3 class="font-weight-bold text--grey mb-4">Sign In</h3></span>
                 <form action="">
                     <div class="card m-0 mb-3 p-2 text-center">
                         <p class="m-0 font-normal-bold">Demo login credentials</p>
@@ -32,10 +32,10 @@
                     <div class="row px-3 mb-3">
                         <div class="form-check col-6">
                             <input type="checkbox" name="" id="rememberMe" class="form-check-input">
-                            <label for="rememberMe" class="form-check-label font-normal">Remember me</label>
+                            <label for="rememberMe" class="font--normal form-check-label">Remember me</label>
                         </div>
                         <div class="col-6 text-right p-0">
-                            <a href="#" class="font-normal pass">Forget Password?</a>
+                            <a href="#" class="font--normal pass">Forget Password?</a>
                         </div>
                     </div>
                     <div class="row px-3">
@@ -43,8 +43,10 @@
                     </div>
                 </form>
             </div>
-            <div class="col-sm-12 col-lg-6 col-xl-6">
-                <img class="intro-bg" src="./assets/intro-bg.png" alt="">
+            <div class="col-md-8">
+                <div class="row justify-content-center ">
+                    <img class="intro-bg img-fluid" src="./assets/intro-bg.png" width="550px" alt="pizza-img">
+                </div>
             </div>
         </div>
     </div>
