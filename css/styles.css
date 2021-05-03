@@ -1,8 +1,17 @@
+/*Global Properties*/
+.font-normal-bold{
+    font-size: 14px;
+    font-weight: 400;
+}
+.font-normal{
+    font-size: 14px;
+}
 *{
     font-family: 'Poppins', sans-serif;
-    color: #374a5e;
 }
-body{
+/*Login Page*/
+
+#login-page{
     background-color: #ebeef6;
 }
 .logo{
@@ -21,40 +30,6 @@ body{
     font-size: 26px;
     color: #374a5e;
     font-weight: 700;
-}
-.demo-text{
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-}
-.colored-text{
-    color: #df2a32;
-}
-.btn-copy{
-    background-color: #df2a32;
-    color: white;
-    font-size: 14px;
-}
-.btn-copy:hover{
-    color: white;
-    background-color: #df2a10;
-}
-.form-card-text{
-    font-size: 14px;
-}
-.submit-btn{
-    background-color: #0dd19d;
-    color: white;
-}
-.submit-btn:hover{
-    background-color: teal;
-}
-.submit-link:hover{
-    color: #fff;
-    text-decoration: none;
-}
-.submit-link{
-    color: white;
 }
 .pass{
     color: inherit;
