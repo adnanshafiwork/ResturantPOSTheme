@@ -17,6 +17,9 @@
     font-size: 26px;
     font-weight: 700;
 }
+.font--middle{
+    font-size: 20px;
+}
 .text--grey{
     color: #374a5e;
 }
@@ -29,8 +32,13 @@
     font-size: 12px;
     text-align: center;
 }
-.table--text tr th,td{
-    vertical-align: center;
+.table-text-md{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+.table--text tbody td{
+    vertical-align: middle;
 }
 
 /*Fonts End*/
@@ -152,3 +160,7 @@
 /* Cards End */
 
 /*Home Page Ends*/
+
+/*Customers*/
+
+/*Customers Ends*/
