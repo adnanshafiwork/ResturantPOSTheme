@@ -1,0 +1,15 @@
+*{
+    font-family: Poppins, sans-serif;
+}
+.nav-bar-wrapper{
+    background-color: red;
+}
+.navbar-items-logo{
+    width: 30px;
+}
+
+/* CHEF LOGO */
+.chef--logo{
+    width: 35px;
+}
+

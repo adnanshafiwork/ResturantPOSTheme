@@ -77,6 +77,9 @@
 .bg--grey{
     background-color: #374a5e;
 }
+.bg--lavender{
+    background-color: #ebeef6;
+}
 /*Backgrounds End*/
 
 
@@ -164,3 +167,10 @@
 /*Customers*/
 
 /*Customers Ends*/
+
+
+/*Kitchen*/
+.chef--logo{
+    width: 35px;
+}
+/*Kitchen Ends*/
