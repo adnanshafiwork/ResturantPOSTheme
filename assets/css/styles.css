@@ -1,0 +1,102 @@
+/*Global Properties*/
+/*Fonts*/
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.font-normal-bold{
+    font-size: 14px;
+    font-weight: 500;
+}
+.font--normal{
+    font-size: 14px;
+}
+.font--big{
+    font-size: 26px;
+}
+.text--grey{
+    color: #374a5e;
+}
+.font--small{
+    font-size: 12px;
+}
+
+.table--text{
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+}
+.table--text tr th,td{
+    vertical-align: center;
+}
+
+/*Fonts End*/
+
+
+/*CUSTOM SCROLL BAR*/
+.vertical-scroll{
+    height: 375px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+  /* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgb(210, 210, 210);
+}
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+   background-color: rgb(160, 160, 160);
+}
+/*CUSTOM SCROLL BAR END*/
+
+
+/*Backgrounds*/
+.bg-light-grey{
+    background-color: #dbdbdbdc;
+}
+.bg--grey{
+    background-color: #374a5e;
+}
+/*Backgrounds End*/
+
+
+/*Local Properties*/
+
+/*Login Page*/
+
+#login-page{
+    background-color: #ebeef6;
+}
+.logo{
+    width: 110px;
+}
+@media screen and (max-width: 990px) {  
+    .intro-bg {
+      display: none;
+    }
+  }
+.pass{
+    color: inherit;
+}
+.pass:hover{
+    color: #df2a32;
+    text-decoration: none;
+}
+
+/*Login Page Ends*/
+
+/*Working Periods Page*/
+
+.navbar-link-logo{
+    width: 30px;
+}
+
+/*Working Periods Page Ends */
