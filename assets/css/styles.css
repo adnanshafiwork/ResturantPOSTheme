@@ -13,6 +13,10 @@
 .font--big{
     font-size: 26px;
 }
+.font-big-bold{
+    font-size: 26px;
+    font-weight: 700;
+}
 .text--grey{
     color: #374a5e;
 }
@@ -68,6 +72,18 @@
 /*Backgrounds End*/
 
 
+
+/* FOOTER */
+.footer-text{
+    font-size: 1vw;
+}
+/* FOOTER END */
+
+
+/*Global Properties End*/
+
+
+
 /*Local Properties*/
 
 /*Login Page*/
@@ -93,6 +109,8 @@
 
 /*Login Page Ends*/
 
+
+
 /*Working Periods Page*/
 
 .navbar-link-logo{
@@ -100,3 +118,37 @@
 }
 
 /*Working Periods Page Ends */
+
+
+
+
+/*Home Page*/
+
+/* Cards */
+.unused-card{
+    background-color: transparent;
+    border: none;
+}
+.plus-sign{
+    font-size: 40px;
+    font-weight: 300;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    width: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.plus-sign{
+    transition: background-color .2s linear,color .2s linear;
+
+}
+.plus-sign:hover{
+    text-decoration: none;
+    background-color: #f64e60;
+    color: white;
+}
+/* Cards End */
+
+/*Home Page Ends*/
