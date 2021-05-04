@@ -21,7 +21,7 @@
 <div class="nav-bar-wrapper container-md-fluid py-1 shadow-sm sticky-top bg-white">
   <div class="row justify-content-between w-100">
       <div class="logo-area pl-4 col-6 col-md-5">
-        <a href="./home-page.html">
+        <a href="#">
           <h1 class="text-danger font-weight-bold">LOGO</h1>
         </a>
       </div>
@@ -53,27 +53,39 @@
   </div>
 </div>
 
-<!--CUSTOMERS-->
-<div class="main bg-light pt-3 pb-5">
-  <div class="container-sm-fluid bg-white mx-4 p-3 shadow rounded mb-5">
+<!--ORDER HISTORY-->
+<div class="main bg--lavender pt-3 pb-5 mb-5">
+  <div class="container-sm-fluid bg-white mx-3 p-3 shadow rounded">
     <div class="container-sm-fluid px-3">
       <div class="row mb-3">
-        <h4 class="font-weight-bold text-dark m-0">Customers</h4>
+        <h2 class="font-weight-bold m-0">Order History</h2>
       </div>
       <form action="" method="get">
-      <div class="row align-items-center justify-content-between pr-1">
-        <div class="col-12 col-md-4 mb-2 m-md-0 p-0">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-sm-4 mb-2 m-sm-0 p-0 pr-sm-5">
           <div class="input-group">
             <div class="input-group-prepend">
-              <button class="btn bg-danger" type="button"><span><i class="fas text-white fa-search"></i></span></button>
+              <button class="btn bg-danger shadow-none" type="button"><span><i class="fas text-white fa-search"></i></span></button>
             </div>
-            <input type="text" class="form-control border-0 bg-light-grey" placeholder="Search" aria-label="" aria-describedby="basic-addon1">
+            <input type="text" class="form-control md-placeholder" placeholder="Search by token, customer, branch.." aria-label="" aria-describedby="basic-addon1">
           </div>
         </div>
-        <div class="mb-2 col-12 col-md-2 mt-2 m-md-0 p-0 p-sm-0">
-          <button class="btn text-uppercase btn-primary btn-block px-0 px-sm-5" data-toggle="modal" data-target="#addNew" type="button">
-            add new
-          </button>
+        <div class="col-sm-2 mb-2 m-sm-0 p-0">
+          <div class="form-group m-0">
+            <select id="inputState" class="form-control">
+              <option selected>Select branch..</option>
+              <option>1st Branch</option>
+            </select>
+          </div>
+        </div>
+        <div class="p-0 mb-2 m-sm-0 col-sm-2">
+          <input type="text" class="form-control md-placeholder" placeholder="From Date : 07/12/2020">
+        </div>
+        <div class="p-0 mb-2 m-sm-0 col-sm-2">
+          <input type="text" class="form-control md-placeholder" placeholder="To Date : 01/02/2021">
+        </div>
+        <div class="p-0 mb-2 m-sm-0 col-sm-1 mb-2 m-sm-0 p-0 text-center">
+          <button class="btn btn-danger btn-block" type="button">Filter</button>
         </div>
       </div>
       </form>
@@ -83,7 +95,7 @@
 
 
 <!-- TABLE -->
-    <div class="container-sm-fluid bg-light mt-3">
+    <div class="container-sm-fluid mt-3">
       <div class="table-responsive vertical-scroll">
         <table class="table table-bordered table-text-md">
 	  			<thead>
@@ -92,19 +104,28 @@
 	  						S/L
 	  					</th>
 	  					<th scope="col">
-	  						Name
+	  						Token
 	  					</th>
 	  					<th scope="col">
-	  						Email
+	  						Time
 	  					</th>
 	  					<th scope="col">
-	  						Phone #
+	  						Date
 	  					</th>
 	  					<th scope="col">
-	  						Address
+	  						Customer
+	  					</th>
+	  					<th scope="col">
+	  						Total Bill
 	  					</th>
 	  					<th scope="col">
 	  						Branch
+	  					</th>
+	  					<th scope="col">
+	  						Status
+	  					</th>
+	  					<th scope="col">
+	  						Print
 	  					</th>
 	  					<th scope="col">
 	  						Action
@@ -114,46 +135,50 @@
 	  			<tbody>
 	  				<tr>
               <td>1</td>
-	  					<td>Alex John</td>
-              <td>alex@gmail.com</td>
-              <td>23436300</td>
-              <td>Rahim Yar Khan</td>
-              <td>Gulshan Iqbal</td>
+	  					<td class="text-primary">#1</td>
+              <td>02:36 PM</td>
+              <td>Dec 29, 2020</td>
+              <td>-</td>
+              <td>14.75$</td>
+              <td>RY Khan</td>
+              <td>
+                <button type="button" class="btn btn-primary py-1 rounded-0" data-toggle="modal" data-target="#processing">Processing</button>
+              </td>
+              <td>
+                <button class="btn btn-primary px-2 py-1"><span><i class="fa fa-print"></i></span></button>
+              </td>
               <td>
                 <div class="dropdown">
-                  <button class="btn shadow-none p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span><i class="fa font-weight-bold font--middle">...</i></span>
                   </button>
                   <div class="dropdown-menu p-0 text-center rounded-0" aria-labelledby="dropdownMenuButton">
-                    <div>
-                    <button class="btn font-weight-bold font--normal text-dark py-2 text-center" type="button">Edit</button>
-                    </div>
-                    <div>
-                    <button class="btn font-weight-bold font--normal text-dark py-2 text-center" type="button">Delete</button>
-                    </div>
+                    <button class="btn shadow-none text-center" type="button">Delete Order</button>
                   </div>
                 </div>
               </td>
 	  				</tr>
 	  				<tr>
-              <td>2</td>
-	  					<td>Phil</td>
-              <td>phil@gmail.com</td>
-              <td>62342300</td>
-              <td>Rahim Yar Khan</td>
-              <td>Gulshan Iqbal</td>
+              <td>1</td>
+	  					<td class="text-primary">#1</td>
+              <td>02:36 PM</td>
+              <td>Dec 29, 2020</td>
+              <td>-</td>
+              <td>14.75$</td>
+              <td>RY Khan</td>
+              <td>
+                <button type="button" class="btn btn-primary py-1 rounded-0" data-toggle="modal" data-target="#processing">Processing</button>
+              </td>
+              <td>
+                <button class="btn btn-primary px-2 py-1"><span><i class="fa fa-print"></i></span></button>
+              </td>
               <td>
                 <div class="dropdown">
-                  <button class="btn shadow-none p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span><i class="fa font-weight-bold font--middle">...</i></span>
                   </button>
                   <div class="dropdown-menu p-0 text-center rounded-0" aria-labelledby="dropdownMenuButton">
-                    <div>
-                    <button class="btn font-weight-bold font--small text-dark py-2 text-center" type="button">Edit</button>
-                    </div>
-                    <div>
-                    <button class="btn font-weight-bold font--small text-dark py-2 text-center" type="button">Delete</button>
-                    </div>
+                    <button class="btn shadow-none text-center" type="button">Delete Order</button>
                   </div>
                 </div>
               </td>
@@ -170,8 +195,8 @@
           <button class="btn px-3 shadow-none py-1 btn-danger" type="button">1</button>
           <button class="btn px-2 shadow-none py-1 border-secondary" type="button"><i class="fas fa-angle-double-right"></i></button>
         </div>
-        <div class="col-sm-2">
-          <p class="m-0 text-right">Showing 1 - 8 of 8</p>
+        <div class="col-sm-2 text-right">
+          <p class="m-0 normal--font">Showing 1 - 8 of 8</p>
         </div>
       </div>
     </div>
@@ -186,7 +211,7 @@
           </h5>
       </div>
       <div class="col-sm-6 col-md-4 text-center">
-          <p class="font--small m-0">
+          <p class="footer-text m-0">
               ©Developer || All Rights Reserved 2020-2021
           </p>
       </div>
@@ -194,53 +219,48 @@
 </footer>
 
 <!--MODAL-->
-<div class="modal fade" id="addNew" tabindex="-1" role="dialog">
+<div class="modal fade" id="processing" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header align-items-center">
-          <h6 class="modal-heading-customers m-0">Add New Customer</h6>
-          <button type="button" class="close" aria-label="Close" data-dismiss="modal">
-            <span aria-hidden="true">&times;</span>
-          </button>
-      </div>
       <div class="modal-body">
         <div class="container-fluid">
-          <form action="" class="new-customers">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Name</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g Mr. Wick">
+            <div class="row justify-content-between border-bottom py-3 mb-3">
+              <h5 class="m-0">Order Details</h5>
+              <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="form-group">
-              <label for="inputState">Select a branch</label>
-              <select id="inputState" class="form-control">
-                <option selected>Lahore Branch</option>
-                <option>RYK Branch</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Email</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="e.g customer@example.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Phone number</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="e.g 03xx xxxxxxx">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Address</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter customer address">
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <button class="btn btn-success my-2 btn-block" type="submit">Save</button>
+            <div class="row p-0">
+              <h4 class="bg-danger text-center m-0 w-100 py-2 text-white">Order Token: #1</h4>
+              <div class="table-responsive">
+                <table class="table table-bordered table-text-md">
+                  <tbody>
+                    <tr class="font-weight-bold">
+                      <td>S/L</td>
+                      <td>Food</td>
+                      <td>Additional Info</td>
+                      <td>QTY</td>
+                      <td>Status</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Zinger Burger</td>
+                      <td>Extra Spicy</td>
+                      <td>3</td>
+                      <td><span><i class="fa fa-times text-danger"></i></span></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Zinger Burger</td>
+                      <td>Extra Spicy</td>
+                      <td>3</td>
+                      <td><span><i class="fa fa-times text-danger"></i></span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="col-sm-6">
-                <button class="btn btn-danger my-2 btn-block" type="button" class="close" data-dismiss="modal">
-                  Close
-                </button>
-              </div>
             </div>
-          </form>
-            
+          </div>
         </div>
       </div>
     </div>
