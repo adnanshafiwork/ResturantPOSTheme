@@ -88,6 +88,10 @@
 .list-group-item a:focus{
     color: #f64e60 !important;
 }
+.focused--link:focus{
+    background-color: #f64e60;
+    color: white;
+}
 /*Placeholder Ends*/
 
 /*Borders*/
@@ -111,6 +115,9 @@
 }
 .bg--tomato{
     background-color: #f64e60;
+}
+.bg--white{
+    background-color: white;
 }
 /*Backgrounds End*/
 
@@ -215,3 +222,23 @@
     width: 35px;
 }
 /*Kitchen Ends*/
+/*POS Page*/
+
+.order-menu-scrollbar{
+    height: 69vh;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+/* ZOOM TRANSITION */
+
+.image-transition:hover .img-trans{
+    transform: scale(1.1);
+}
+.image-transition{
+    overflow: hidden;
+}
+.img-trans{
+    transition: transform .2s linear;
+}
+/*POS Page Ends*/
