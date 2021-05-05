@@ -23,10 +23,15 @@
 .text--grey{
     color: #374a5e;
 }
+.text--seagreen{
+    color: #0dd19d;
+}
+.text--tomato{
+    color: #f64e60;
+}
 .font--small{
     font-size: 12px;
 }
-
 .table--text{
     font-weight: 500;
     font-size: 12px;
@@ -91,6 +96,12 @@
 }
 .bg--lavender{
     background-color: #ebeef6;
+}
+.bg--seagreen{
+    background-color: #0dd19d;
+}
+.bg--tomato{
+    background-color: #f64e60;
 }
 /*Backgrounds End*/
 
@@ -179,6 +190,15 @@
 /*Customers*/
 
 /*Customers Ends*/
+
+
+/*Reports*/
+.reports-scrollbar{
+    height: 80vh;
+    margin: 0 auto;
+    overflow: overlay;
+}
+/*Reports Ends*/
 
 
 /*Kitchen*/
