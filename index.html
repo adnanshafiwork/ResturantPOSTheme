@@ -11,20 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body id="login-page">
-    <div class="container-md-fluid px-5 main-body">
+    <div class="container-md-fluid px-5">
         <div class="row mt-5 px-1">
             <div class="col-sm-12">
-                <span><h1 class="m-0 font-weight-bold text-md-left text-center"><a href="#" class="text-decoration-none text-danger">LOGO</a></h1></span>
+                <h1 class="m-0 font-weight-bold text-lg-left text-center"><a href="#" class="text-decoration-none text--crimson">LOGO</a></h1>
             </div>
         </div>
         <div class="row justify-content-between">
-            <div class="col-md-4 mt-5 p-4">
-                <span><h3 class="font-weight-bold text--grey mb-4">Sign In</h3></span>
-                <form action="">
-                    <div class="card m-0 mb-3 p-2 text-center">
-                        <p class="m-0 font-normal-bold">Demo login credentials</p>
-                        <p class="m-0 font-normal-bold text-danger">This password section is only for demo</p>
-                    </div>
+            <div class="col-lg-4 mt-5 p-4">
+                <h3 class="font-weight-bold mb-4 text--crimson">Sign In</h3>
+                <form action="./home-page.html">
+                    <!-- <div class="card m-0 mb-3 py-4 text-center">
+                        <p class="m-0 font-weight-bold">Demo login credentials</p>
+                        <p class="m-0 text--crimson">This password section is only for demo</p>
+                    </div> -->
                     <div class="form-group">
                         <input type="text" class="form-control mb-3 col-12" placeholder="Email">
                         <input type="password" class="form-control mb-3 col-12" placeholder="Password">
@@ -32,21 +32,16 @@
                     <div class="row px-3 mb-3">
                         <div class="form-check col-6">
                             <input type="checkbox" name="" id="rememberMe" class="form-check-input">
-                            <label for="rememberMe" class="font--normal form-check-label">Remember me</label>
+                            <label for="rememberMe" class="font--normal font-weight-light text-white form-check-label">Remember me</label>
                         </div>
                         <div class="col-6 text-right p-0">
-                            <a href="#" class="font--normal pass">Forget Password?</a>
+                            <a href="#" class="font--normal font-weight-light text-white pass">Forget Password?</a>
                         </div>
                     </div>
                     <div class="row px-3">
-                        <a class="btn bg--seagreen text-white btn-block shadow-none" href="./home-page.html">Submit</a>
+                        <button type="submit" class="btn bg--crimson text-white btn-block shadow-none">Submit</button>
                     </div>
                 </form>
-            </div>
-            <div class="col-md-8">
-                <div class="row justify-content-center ">
-                    <img class="intro-bg img-fluid" src="./assets/Images/intro-bg.png" width="565px" alt="pizza-img">
-                </div>
             </div>
         </div>
     </div>

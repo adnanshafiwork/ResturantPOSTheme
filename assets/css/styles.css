@@ -1,11 +1,14 @@
 /*Global Properties*/
+html{
+    background:url(../Images/black-pizza.png)no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 /*Fonts*/
 *{
     font-family: 'Poppins', sans-serif;
-}
-.font-normal-bold{
-    font-size: 14px;
-    font-weight: 500;
 }
 .font--normal{
     font-size: 14px;
@@ -19,6 +22,12 @@
 }
 .font--middle{
     font-size: 20px;
+}
+.text--crimson{
+    color: #e83631;
+}
+.text--custom{
+    color: #e29a60;
 }
 .text--grey{
     color: #374a5e;
@@ -113,6 +122,9 @@
 .bg--seagreen{
     background-color: #0dd19d;
 }
+.bg--crimson{
+    background-color: #e83631;
+}
 .bg--tomato{
     background-color: #f64e60;
 }
@@ -125,7 +137,7 @@
 
 /* FOOTER */
 .footer-text{
-    font-size: 1vw;
+    font-size: 12px;
 }
 /* FOOTER END */
 
@@ -139,7 +151,7 @@
 /*Login Page*/
 
 #login-page{
-    background-color: #ebeef6;
+    background-color: transparent;
 }
 .logo{
     width: 110px;
